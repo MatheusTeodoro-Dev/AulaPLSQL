@@ -1,0 +1,33 @@
+SET SERVEROUTPUT ON 
+ACCEPT pLimite PROMPT 'Digite o valor do limite: '
+DECLARE 
+    vNumero NUMBER(38) := 1;
+    vLimite Number(38) := &pLimite;
+BEGIN
+-- Imprimindo números de 1 até o limite;
+LOOP
+    DBMS_OUTPUT.PUT_LINE('Número = ' || to_char(vNumero));
+    EXIT WHEN vNumero = vLimite;
+    vNumero := vNumero +1;
+    END LOOP;
+END;
+
+SET SERVEROUTPUT ON
+ACCEPT pLimite PROMPT 'Digite o valor Limite '
+DECLARE
+    vLimite NUMBER(38) := &pLimite;
+    vNumero NUMBER(38) := 1;
+    vValor NUMBER(38);
+BEGIN
+    LOOP
+        vValor := MOD(vNumero,2);
+        IF (vValor = 0)
+        THEN
+        DBMS_OUTPUT.PUT_LINE('Numero = ' || to_char(vNumero) || ' é par');
+        ELSE
+        DBMS_OUTPUT.PUT_LINE('Numero = ' || to_char(vNumero) || ' é impar');
+        END IF;
+    EXIT WHEN vNumero = vLimite;
+    vNumero := vNumero +1;
+    END LOOP;
+END;

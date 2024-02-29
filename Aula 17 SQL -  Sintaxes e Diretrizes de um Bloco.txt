@@ -1,0 +1,15 @@
+SET SERVEROUTPUT ON
+DECLARE 
+    vNumero1 NUMBER(13,2); --Declaração da primeira variável
+    vNUmero2 NUMBER(13,2); --Declaração da segunda variável
+    vMedia NUMBER(13,2); --Declaração da terceira variável
+BEGIN
+    /* Cálcudo do valor da média entre dois números
+    */
+    vNumero1 := 8000;
+    vNumero2 := 4E3;
+    vMedia := (vNumero1 + vNumero2) /2;
+    DBMS_OUTPUT.PUT_LINE('vNumero1 = ' || vNumero1);
+    DBMS_OUTPUT.PUT_LINE('vNumero2 = ' || vNumero2);
+    DBMS_OUTPUT.PUT_LINE('Media = ' || vMedia);
+END;

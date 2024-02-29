@@ -1,0 +1,22 @@
+
+--Executando o script UTLDTREE
+@C:\OracleDatabase21cXE\dbhomeXE\rdbms\admin\utldtree.sql
+
+--Executando a procedure DEPTREE_FILL
+
+exec DEPTREE_FILL('TABLE', 'HR', 'EMPLOYEES')
+
+--Utilizando as visões DEPTREE
+
+DESC deptree
+
+SELECT *
+FROM deptree
+ORDER by seq#;
+
+-- Utilizando as visões IDEPTREE
+
+DESC ideptree
+
+SELECT *
+FROM ideptree;

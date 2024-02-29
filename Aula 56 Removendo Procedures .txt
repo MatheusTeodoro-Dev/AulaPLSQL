@@ -1,0 +1,3 @@
+DROP PROCEDURE nome_da_procedure; 
+
+Após deletada, ela não pode ser recuperada, apenas do backup

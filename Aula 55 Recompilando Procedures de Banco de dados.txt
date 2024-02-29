@@ -1,0 +1,3 @@
+ALTER PROCEDURE PRC_INSERE_EMPREGADO COMPILE;
+
+Método usado para recompilar uma proceddures em casos em que você esquece de compilar a procedure, quando o código está ok e você apenas esqueceu de compilar

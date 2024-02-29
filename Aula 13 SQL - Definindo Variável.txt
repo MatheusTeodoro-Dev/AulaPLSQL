@@ -1,0 +1,31 @@
+-- Declaração de Variável tipo Number
+
+SET SERVEROUTPUT ON
+DECLARE
+ vNumero NUMBER(11,2) :=1200.50;
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Número = ' || vNumero);
+    
+END;
+
+-- Declaração de Variável tipo Char e VarChar2
+
+
+DECLARE
+    vCaracterTamFixo CHAR(2) := 'RS';
+    vCaracterTamVarial VARCHAR2(100) := 'Porto Alegre, RS';
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('String Caracters Tam Fixo = ' || vCaracterTamFixo );
+    DBMS_OUTPUT.PUT_LINE('String Caracters Tam Variavel = ' || vCaracterTamVarial);
+    
+END;
+
+-- Declarando variáveis tipo DATE
+
+DECLARE
+    vData1 DATE := '29/04/20';
+    vData2 DATE := '29/04/2020';
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('String Data 1 = ' || vData1);
+    DBMS_OUTPUT.PUT_LINE('String Data 2 = ' || vData2);
+END;

@@ -1,0 +1,10 @@
+SET SERVEROUTPUT ON
+ACCEPT pLimite PROMPT 'Digite o valor Limite: '
+DECLARE
+    vInicio INTEGER(3) := 1;
+    vFim Number(38) := &plimite;
+BEGIN
+FOR i IN vInicio..vFim LOOP
+    DBMS_OUTPUT.PUT_LINE('Número = ' || to_char(i));
+END LOOP;
+END;
